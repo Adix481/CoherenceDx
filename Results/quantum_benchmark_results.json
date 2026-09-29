@@ -1,0 +1,64 @@
+{
+  "status": "success",
+  "models": [
+    {
+      "name": "Quantum VQC Heart Disease",
+      "disease": "Heart Disease",
+      "type": "quantum",
+      "model": "VQC Heart Disease (4 qubits)",
+      "dataset": "UCI Heart Disease",
+      "dataset_rows": 920,
+      "evaluated_rows": 184,
+      "accuracy": 83.7,
+      "sensitivity": 86.27,
+      "specificity": 80.49,
+      "precision": 84.62,
+      "f1": 85.44,
+      "roc_auc": 90.28,
+      "confusion_matrix": [
+        [
+          66,
+          16
+        ],
+        [
+          14,
+          88
+        ]
+      ],
+      "true_positive": 88,
+      "true_negative": 66,
+      "false_positive": 16,
+      "false_negative": 14
+    },
+    {
+      "name": "Quantum VQC Breast Cancer",
+      "disease": "Breast Cancer",
+      "type": "quantum",
+      "model": "VQC Breast Cancer (4 qubits)",
+      "dataset": "Wisconsin Breast Cancer",
+      "dataset_rows": 569,
+      "evaluated_rows": 114,
+      "accuracy": 92.98,
+      "sensitivity": 80.95,
+      "specificity": 100.0,
+      "precision": 100.0,
+      "f1": 89.47,
+      "roc_auc": 98.81,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          8,
+          34
+        ]
+      ],
+      "true_positive": 34,
+      "true_negative": 72,
+      "false_positive": 0,
+      "false_negative": 8
+    }
+  ],
+  "note": "Quantum benchmark metrics were calculated by running the 4-qubit VQC models on their respective held-out test splits."
+}
